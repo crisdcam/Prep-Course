@@ -201,7 +201,7 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  return (alto + ancho)
+  return lado * 4
 }
 
 
@@ -216,7 +216,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  return (euro * 1,20)
+  return (euro * 1.20)
 }
 
 
@@ -227,12 +227,12 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if(letra.length===1){
-    if(letra==="a" | letra ==="e" | letra ==="i" | letra==="o" | letra ==="u"){
+    if(letra ==="a" | letra ==="e" | letra ==="i" | letra==="o" | letra ==="u"){
       return "Es vocal"
     }else{
       return "Dato incorrecto"
     }
-  } else if(letra.length >1){
+  }else if(letra.length > 1){
     return "Dato incorrecto"
   }
 }
