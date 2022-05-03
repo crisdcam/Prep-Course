@@ -149,15 +149,16 @@ function diaDeLaSemana(numeroDeDia) {
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
-  //Escribe tu código aquí   
+  //Escribe tu código aquí
   if ( numeroDeDia === 1 || numeroDeDia === 7) {
     return "Es fin de semana"
 
   }
 
   if (numeroDeDia > 1 && numeroDeDia < 7 ) {
-    return "Es dia laboral"
-  }  
+    return "Es dia Laboral"
+  }
+
 }
 
 
@@ -226,6 +227,17 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  var resul = [];
+
+  for (var i = 0 ; i < array.length ; i++) {
+    if ( array [i] > 100 ) {
+ 
+     resul.push(array[i]);
+
+    }
+  }
+  // [200, 120, 160, 148]
+  return resul;
 }
 
 
@@ -237,6 +249,21 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  var arr = [];
+
+  var i = 0;
+
+  while ( i < 10 ) {
+    numero += 2 ;
+    i++;
+    arr.push(numero);
+
+    if (i === (numero + 2 )) {
+      return "Se interrumpió la ejecución"
+    
+    }
+  }
+  return arr;
 }
 
 
@@ -247,6 +274,25 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  let asd = [];
+  var i = 0 ;
+  // [52, 54, 56, 58, 60, 62, 64, 66, 68]
+  // [-2, 0, 2, 4, 6, 8, 10, 12, 14] 16
+
+  while ( i < 10) {
+    i++;
+
+    if ( i === 5 ) {
+      continue;
+    }
+    numero = numero + 2;
+
+    asd.push(numero);
+  
+  }
+  return asd;
+
+
 }
 
 
